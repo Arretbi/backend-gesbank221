@@ -7,13 +7,13 @@ from fastapi import FastAPI, HTTPException, status
 from fastapi.middleware.cors import CORSMiddleware
 from typing import List, Union
 
-from .models import (
+from models import (
     CompteCreateCourant, CompteCreateEpargne, CompteCreateBloque,
     CompteUpdate, DepotRetrait, CompteResponse, MessageResponse,
     InteretsResponse, ErrorResponse
 )
-from .storage import BanqueStorage
-from .services import BanqueService, ServiceError
+from storage import BanqueStorage
+from services import BanqueService, ServiceError
 
 
 app = FastAPI(
