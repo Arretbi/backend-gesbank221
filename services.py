@@ -1,7 +1,7 @@
 from typing import List, Optional
 from datetime import datetime, timedelta
-from .storage import BanqueStorage, StorageError
-from .validation import (
+from storage import BanqueStorage, StorageError
+from validation import (
     valider_numero, valider_titulaire, valider_solde, valider_montant,
     valider_decouvert, valider_taux, valider_date, DUREE_BLOCAGE_JOURS
 )
